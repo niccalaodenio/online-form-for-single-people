@@ -19,7 +19,7 @@
 }
 
 @mixin size {
-  width: clamp(430px, 100vw, 100%);
+  width: clamp(480px, 100vw, 100%);
 }
 @mixin h3size {
   font: {
