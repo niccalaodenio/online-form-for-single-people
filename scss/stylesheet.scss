@@ -18,7 +18,7 @@
 }
 
 @mixin size {
-   width:  clamp(400px, 40vw, 60%);
+   width:  clamp(480px, 40vw, 60%);
 }
 @mixin h3size {
     font: {
@@ -37,7 +37,7 @@ body{
     .ncx{
         @include size();
         padding: .8rem;
-        margin: 1.5rem;
+        margin: 1rem;
         background-color: rgb(255, 251, 251);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.219);
         #Jaf{
@@ -68,17 +68,17 @@ body{
             }
             .prsnl_quest{
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
                 padding: .8rem 1.4rem;
                 font-family: 'Poppins';
                 font-size: 13px;
                 .first-column{
-                    width: 155px;
-                    margin-left: -2rem;
+                    width: 195px;
+                    margin-left: .3rem;
                     padding-right: .5rem;
                     }
                     .second-column{
-                        width: 120px;
+                        width: 200px;
                     }
                     .box{
                         width: 9.6rem;
@@ -94,11 +94,11 @@ body{
                     font-family: 'Poppins';
                     font-size: 13px;
                     .father{
-                        width: 180px;
+                        width: 200px;
                         padding: .4rem;
                     }
                     .mother{
-                        width: 180px;
+                        width: 200px;
                         margin-right: -2rem;
                     }
                     .box{
