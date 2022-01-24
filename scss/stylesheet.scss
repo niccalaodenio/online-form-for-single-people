@@ -1,248 +1,255 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 @mixin center {
-  display: flex;
-  place-items: center;
-  justify-content: center;
+    display: flex;
+    place-items: center;
+    justify-content: center;
 }
+ 
 
 @mixin labelfont {
-  font: {
-    size: clamp(14px, 5vw, 10%);
-    family: "Montserrat";
-  }
+    font: {
+         size:clamp(14px, 5vw, 10%) ;
+        family: 'Montserrat';
+    }
 }
 
 @mixin size {
-  width: clamp(480px, 40vw, 60%);
+   width:  clamp(480px, 40vw, 60%);
 }
 @mixin h3size {
-  font: {
-    size: clamp(1rem, 10%, 5vw);
-    family: "Montserrat";
-  }
+    font: {
+        size: clamp(1rem, 10%, 5vw);
+        family: 'Montserrat';
+    }
 }
 
-body {
-  @include center();
-  @include labelfont();
-  background: rgb(243, 243, 243);
-  .dataLegend {
-    color: rgb(33, 189, 124);
-  }
-  .ncx {
-    @include size();
-    padding: 0.8rem;
-    margin: 1rem;
-    background-color: rgb(255, 251, 251);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.219);
-    #Jaf {
-      h3 {
-        text-align: center;
-        @include h3size();
-      }
-      .basic_info {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 0.8rem 0.3rem;
-        font-family: "Poppins";
-        font-size: 13px;
-        .first-column {
-          width: 200px;
-        }
-        .second-column {
-          width: 150px;
-        }
-        .box {
-          width: 9.6rem;
-          height: 1.5rem;
-          border-radius: 5px;
-          border: solid 1px rgb(83, 83, 83);
-        }
-      }
-      .prsnl_quest {
-        display: flex;
-        justify-content: center;
-        padding: 0.8rem 1.4rem;
-        font-family: "Poppins";
-        font-size: 13px;
-        .first-column {
-          width: 195px;
-          margin-left: 0.3rem;
-          padding-right: 0.5rem;
-        }
-        .second-column {
-          width: 200px;
-        }
-        .box {
-          width: 9.6rem;
-          height: 1.5rem;
-          border-radius: 5px;
-          border: solid 1px rgb(83, 83, 83);
-        }
-      }
-      .FamBG {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 0.8rem 0.4rem;
-        font-family: "Poppins";
-        font-size: 13px;
-        .father {
-          width: 200px;
-          padding: 0.4rem;
-        }
-        .mother {
-          width: 200px;
-          margin-right: -2rem;
-        }
-        .box {
-          width: 9.6rem;
-          height: 1.5rem;
-          border-radius: 5px;
-          border: solid 1px rgb(83, 83, 83);
-        }
-      }
-      span {
-        padding: 8px 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-      }
-      #btnSubmit {
-        height: auto;
-        padding: 4px 10px;
-        border-radius: 3px;
-        width: auto;
-        font-size: 15px;
-        border: solid 0px beige;
-        position: relative;
-        background-color: rgb(33, 189, 124);
-        color: white;
-        border-radius: 20px;
-      }
+body{
+    @include center();
+    @include labelfont();
+    background: rgb(243, 243, 243);
+    .dataLegend{
+        color: rgb(33, 189, 124)
     }
-  }
+    .ncx{
+        @include size();
+        padding: .8rem;
+        margin: 1rem;
+        background-color: rgb(255, 251, 251);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.219);
+        #Jaf{
+            
+            h3{
+                text-align: center;
+                @include h3size();
+            }
+            .basic_info{
+               display: flex;
+               justify-content: space-evenly;
+               padding: .8rem .3rem;
+                font-family: 'Poppins';
+                font-size: 13px;
+              .first-column{
+                width: 200px;
+                
+                }
+                .second-column{
+                    width: 150px;
+                }
+                .box{
+                    width: 9.6rem;
+                    height: 1.5rem;
+                    border-radius: 5px;
+                    border: solid 1px rgb(83, 83, 83); 
+                }
+            }
+            .prsnl_quest{
+                display: flex;
+                justify-content: center;
+                padding: .8rem 1.4rem;
+                font-family: 'Poppins';
+                font-size: 13px;
+                .first-column{
+                    width: 195px;
+                    margin-left: .3rem;
+                    padding-right: .5rem;
+                    }
+                    .second-column{
+                        width: 200px;
+                    }
+                    .box{
+                        width: 9.6rem;
+                        height: 1.5rem;
+                        border-radius: 5px;
+                        border: solid 1px rgb(83, 83, 83); 
+                    }
+            }       
+                .FamBG{
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: .8rem .4rem;
+                    font-family: 'Poppins';
+                    font-size: 13px;
+                    .father{
+                        width: 200px;
+                        padding: .4rem;
+                    }
+                    .mother{
+                        width: 200px;
+                        margin-right: -2rem;
+                    }
+                    .box{
+                        width: 9.6rem;
+                        height: 1.5rem;
+                        border-radius: 5px;
+                        border: solid 1px rgb(83, 83, 83); 
+                    }
+                }
+                span{
+                    padding: 8px 10px;
+                    display: flex;
+                    flex-direction: row;
+                   justify-content: flex-end;
+                   
+                }
+                #btnSubmit{
+                    height: auto;
+                    padding: 4px 10px;
+                    border-radius: 3px;
+                    width: auto;
+                    font-size: 15px;
+                    border: solid 0px beige;
+                    position: relative;
+                    background-color: rgb(33, 189, 124);
+                    color: white;
+                    border-radius: 20px;
+                    }
+        }
+    }
 }
-@media (min-width: 600px) {
-  @mixin sayz {
-    width: clamp(750px, 50%, 50vw);
-  }
-  @mixin font {
-    font: {
-      size: clamp(1rem, 10%, 10vw);
-      family: "Montserrat";
+@media(min-width: 600px){
+    @mixin sayz {
+        width:  clamp(750px, 50%, 50vw);
+     }
+     @mixin font {
+        font: {
+             size:clamp(1rem, 10%, 10vw) ;
+            family: 'Montserrat';
+        }
     }
-  }
-  body {
-    @include font();
-    .dataLegend {
-      color: rgb(8, 87, 206);
+    body{
+         @include font();
+         .dataLegend{
+            color: rgb(8, 87, 206);
+        }
+         .ncx{
+                @include sayz();
+            #Jaf{
+                .basic_info{
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: .9rem;
+                     font-family: 'Poppins';
+                      @include font();
+                   .first-column{
+                     width: 300px;
+                     
+                     }
+                     .second-column{
+                         width: 290px;
+                     }
+                     .box{
+                         width: 10rem;
+                         height: 1.9rem;
+                         border-radius: 5px;
+                         border: solid 1px rgb(83, 83, 83);
+                         margin: .2rem; 
+                     }
+                     .lblBasicInfo{
+                         width: 7.2rem;
+                          display: inline-flex;
+                     }
+                     .LN{
+                         margin-left: -2px;
+                     }
+                }
+                .prsnl_quest{
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: .9rem;
+                     font-family: 'Poppins';
+                      @include font();
+                    .first-column{
+                        width: 290px;
+                        margin-left: .3rem;
+                        padding-right: .5rem;
+                        }
+                        .second-column{
+                            width: 290px;
+                        }
+                        .box{
+                            width: 10.5rem;
+                            height: 1.5rem;
+                            border-radius: 5px;
+                            border: solid 1px rgb(83, 83, 83); 
+                             
+                        }
+                } 
+                .FamBG{
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: .9rem;
+                     font-family: 'Poppins';
+                      @include font();
+                    .father{
+                        width: 315px;
+                        padding: .4rem;
+                    }
+                    .mother{
+                        width: 315px;
+                    
+                    }
+                    .box{
+                        width: 10rem;
+                        height: 1.9rem;
+                        border-radius: 5px;
+                        border: solid 1px rgb(83, 83, 83); 
+                        
+                    }
+                    .lbl{
+                        width: 8rem;
+                        display: inline-flex;
+                    }
+                    .LN{
+                        margin-left: -3px;
+                    }
+                    .NL{
+                        margin-right: -10px;
+                    }
+                }
+                    span{
+                        padding: 8px 10px;
+                        display: flex;
+                        flex-direction: row;
+                         justify-content: flex-end;
+                   
+                     }
+                    #btnSubmit{
+                        height: auto;
+                        padding: 6px 13px;
+                        border-radius: 3px;
+                        width: auto;
+                        font-size: 15px;
+                        border: solid 0px beige;
+                        position: relative;
+                        background-color: rgb(8, 87, 206);
+                        color: white;
+                        border-radius: 20px;
+                        }
+            }
+       }
     }
-    .ncx {
-      @include sayz();
-      #Jaf {
-        .basic_info {
-          display: flex;
-          justify-content: space-evenly;
-          padding: 0.9rem;
-          font-family: "Poppins";
-          @include font();
-          .first-column {
-            width: 300px;
-          }
-          .second-column {
-            width: 290px;
-          }
-          .box {
-            width: 10rem;
-            height: 1.9rem;
-            border-radius: 5px;
-            border: solid 1px rgb(83, 83, 83);
-            margin: 0.2rem;
-          }
-          .lblBasicInfo {
-            width: 7.2rem;
-            display: inline-flex;
-          }
-          .LN {
-            margin-left: -2px;
-          }
-        }
-        .prsnl_quest {
-          display: flex;
-          justify-content: space-evenly;
-          padding: 0.9rem;
-          font-family: "Poppins";
-          @include font();
-          .first-column {
-            width: 290px;
-            margin-left: 0.3rem;
-            padding-right: 0.5rem;
-          }
-          .second-column {
-            width: 290px;
-          }
-          .box {
-            width: 10.5rem;
-            height: 1.5rem;
-            border-radius: 5px;
-            border: solid 1px rgb(83, 83, 83);
-          }
-        }
-        .FamBG {
-          display: flex;
-          justify-content: space-evenly;
-          padding: 0.9rem;
-          font-family: "Poppins";
-          @include font();
-          .father {
-            width: 315px;
-            padding: 0.4rem;
-          }
-          .mother {
-            width: 315px;
-          }
-          .box {
-            width: 10rem;
-            height: 1.9rem;
-            border-radius: 5px;
-            border: solid 1px rgb(83, 83, 83);
-          }
-          .lbl {
-            width: 8rem;
-            display: inline-flex;
-          }
-          .LN {
-            margin-left: -3px;
-          }
-          .NL {
-            margin-right: -10px;
-          }
-        }
-        span {
-          padding: 8px 10px;
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end;
-        }
-        #btnSubmit {
-          height: auto;
-          padding: 6px 13px;
-          border-radius: 3px;
-          width: auto;
-          font-size: 15px;
-          border: solid 0px beige;
-          position: relative;
-          background-color: rgb(8, 87, 206);
-          color: white;
-          border-radius: 20px;
-        }
-      }
-    }
-  }
-}
+} 
