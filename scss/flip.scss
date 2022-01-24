@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-items: center;
+  .flip-card {
+    // background-color:none;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+// add perspective property to make a 3D container
+// this define the distance from z=0 plane towards the user
+    perspective: 900px;
+   
+     .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+//box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          .flip-card-front,
+          .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+             
+           }
+           .flip-card-front {
+            background-color: #bbb;
+            color: black;
+            //transform: translateZ(100px);
+            //transition: ease-in .2s;
+          
+          }
+    
+          .flip-card-back {
+            background-color: rgba(255, 0, 0, 0);
+            color: rgb(55, 28, 173);
+             transform: rotateY(180deg);
+            -webkit-backface-visibility: hidden;
+             backface-visibility: hidden;
+             transition: ease-in .2s;
+              
+          } 
+    }
+
+  }
+  // @mixin slide {
+  //   .flip-card-front{
+  //     transform: rotateY(200px);
+  //   }
+  //   .flip-card-back{
+  //     transform: rotateY(-200px);
+  //     z-index: 100;
+  //   }
+  // }
+
+  .flip-card:hover 
+  .flip-card-inner {
+     transform: rotatey(180deg);
+    // transform: translateX(200px);
+    // perspective: 500px;
+    // @include slide();
+  }
+}
+
+
