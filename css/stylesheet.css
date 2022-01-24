@@ -9,6 +9,7 @@
 
 body {
   width: 100vw;
+  margin-left: 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,7 +27,7 @@ body .dataLegend {
 }
 
 body .ncx {
-  width: clamp(480px, 100vw, 100%);
+  width: clamp(500px, 100vw, 100%);
   padding: 1.2rem;
   margin: 1rem;
   background-color: #fffbfb;

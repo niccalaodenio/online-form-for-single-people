@@ -19,7 +19,7 @@
 }
 
 @mixin size {
-  width: clamp(480px, 100vw, 100%);
+  width: clamp(500px, 100vw, 100%);
 }
 @mixin h3size {
   font: {
@@ -30,7 +30,7 @@
 
 body {
   width: 100vw;
-  
+ margin-left: 2vw;
   @include center();
   @include labelfont();
   background: rgb(243, 243, 243);
