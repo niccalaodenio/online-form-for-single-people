@@ -25,9 +25,10 @@ body .dataLegend {
 }
 
 body .ncx {
-  max-width: 650px;
-  padding: 1.2rem;
-  margin: 2rem;
+  width: 100%;
+  max-width: 480px;
+  padding: 1.8rem;
+  margin: 1rem;
   background-color: #fffbfb;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.219);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.219);
@@ -52,7 +53,7 @@ body .ncx #Jaf .basic_info {
 }
 
 body .ncx #Jaf .basic_info .first-column {
-  width: 150px;
+  width: 200px;
 }
 
 body .ncx #Jaf .basic_info .second-column {
@@ -73,19 +74,19 @@ body .ncx #Jaf .prsnl_quest {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 0.8rem 1.4rem;
+  padding: 0.8rem .4rem;
   font-family: "Poppins";
   font-size: 13px;
 }
 
 body .ncx #Jaf .prsnl_quest .first-column {
-  width: 145px;
+  width: 165px;
   margin-left: 0.3rem;
   padding-right: 0.5rem;
 }
 
 body .ncx #Jaf .prsnl_quest .second-column {
-  width: 150px;
+  width: 180px;
 }
 
 body .ncx #Jaf .prsnl_quest .box {
@@ -108,12 +109,12 @@ body .ncx #Jaf .FamBG {
 }
 
 body .ncx #Jaf .FamBG .father {
-  width: 150px;
+  width: 170px;
   padding: 0.4rem;
 }
 
 body .ncx #Jaf .FamBG .mother {
-  width: 150px;
+  width: 200px;
 }
 
 body .ncx #Jaf .FamBG .box {
