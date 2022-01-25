@@ -14,119 +14,121 @@
     <header>
         <h1></h1>
     </header>
-            <main class="ncx">
-            <article id="Jaf">
-                <h3>JOWA APPLICATION FORM 2022</h3>
-                <form method="GET" action="">
-                    <section class="basicInfoSection">
-                     <fieldset class="fsData" id="Fs_basic_Info">
-                            <legend class="dataLegend"><b>Basic Information</b></legend>
-                                <section class="InfoSection basic_info">  
-                                    <div class="first-column">
-                                        <label class="lblBasicInfo " for="lName" >Last Name</label>
-                                        <input type="text" name="LName" id="lName" class="box LN" required><br>
-                                        <label class="lblBasicInfo" for="fName">First Name</label><input type="text" name="FName" id="fName" required class="box" ><br>
-                                        <label class="lblBasicInfo" for="mi">Middle Initial</label><input type="text" name="Mi" id="mi" required class="box" ><br>
-                                        <label class="lblBasicInfo" for="beerday">Date of Birth</label><input type="date" name="bday" id="beerday" required class="box" ><br>
-                                        <label class="lblBasicInfo" for="ctznshp">Citizenship</label><input type="text" name="ctznshp" id="ctznshp" class="box" ><br>
-                                    </div>
-                                    <div class="second-column">
-                                        <label class="lblBasicInfo" for="address">Address</label><input type="text" name="address" id="address" required class="box" ><br>
-                                        <label class="lblBasicInfo" for="age">Age</label><input type="number" name="Age" id="age" required class="box" ><br>
-                                        <label class="lblBasicInfo" for="btype">  Blood Type</label><input type="text" name="btype" id="bType" required class="box" ><br>
-                                        <label class="lblBasicInfo" for="height">Height</label><input type="text" name="height" id="height"required class="box" ><br>
-                                        <label class="lblBasicInfo" for="occupation">Occupation</label><input type="text" name="occupation" id="occupation"required class="box" ><br>
-                                    </div>
-                                </section>     
-                        </fieldset>
-                    </section>
-                    <section>
-                        <fieldset class="fsData" id="Fs_prsnl_quest">
-                            <legend class="dataLegend"><b>Personal Questions</b></legend>
-                                <section class="InfoSection prsnl_quest">
-                                    <div class="first-column">
-                                        <label for="single"> Are you single? <br>
-                                            <input type="radio" name="single?" id="yes"><label for="yes">Yes</label><br>
-                                            <input type="radio" name="single?" id="no"> <label for="no">No</label><br>
-                                            <input type="radio" name="single?" id="maybe"> <label for="maybe">Maybe</label>
-                                        </label><br><br>
-                                        <label for="">Are you still virgin?</label><br>
-                                            <input type="radio" name="virgin?" id="yes"><label for="">Yes</label><br>
-                                            <input type="radio" name="virgin?" id="no"> <label for="">No</label><br>
-                                            <input type="radio" name="virgin?" id="maybe"> <label for="">Maybe</label><br><br>
-                                        <label for="">Do you have kids?</label><br>
-                                            <input type="radio" name="kids?" id="yes"><label for="">Yes</label><br>
-                                            <input type="radio" name="kids?" id="no"> <label for="">No</label><br>
-                                            <input type="radio" name="kids?" id="maybe"> <label for="">Maybe</label><br><br>
-                                            <label for="">
-                                                How long will you stay?
-                                            <section id="dropdown">
-                                                <select name="will stay?" id="stay" >
-                                                    <option value="">Maybe:</option>
-                                                    <option value="months">Months</option>
-                                                    <option value="days">Days</option>
-                                                    <option value="years">Years</option>
-                                                    <option value="lifetime">Lifetime</option>
-                                                    <option value="never">Never</option>
-                                                    <option value="waporeber">Waray Poreber!</option>
-                                                </select>
-                                            </section>
-                                                </label>
-                                        <br>
-                                                <label for="">Do you smoke and Drink alcoholic beverages?</label><br>
-                                                <input type="radio" name="drink&smoke?" id="yes">
-                                                <label for="">Yes, I drink occationally but 
-                                                    I don't smoke</label><br>
-                                                <input type="radio" name="drink&smoke?" id="Yes"><label for="">Both Yes<br>
-                                                <input type="radio" name="drink&smoke?" id="no"> <label for="">Both No</label>
-                                    </div>
-                                    <div class="second-column">
-                                        <label class="lblBasicInfo" for="">How old are you when you had your first relationship?</label><input type="text" name="" id=""required class="box" ><br><br>
-                                        <label for="">Relationship Background: <em>give at least 3 </em> </label><br>
-                                        <label for="">Ex #1 Full Name:</label><input type="text" name="x1_name" class="box" id=""><br>
-                                        <label for="">Ex #2 Full Name:</label><input type="text" name="x2_name" class="box" id=""><br> <br>
-                                        <label for="">What is your SOGIE?</label><input type="text" name="x3_name" class="box" id="">
-                                        <br> <br>
-                                        <label for="">Why should I chose you?</label><br>
-                                        <textarea name="why?" id="txtWaeyo" cols="18" rows="5" placeholder="Enter your rationale"></textarea><br><br>
-                                        <label for="">Upload your Medical Certificate and Police Clearance</label> <br><input type="file" name="certificate" id="">
-                                    </div>
-                                </section>
-                        </fieldset>
-                    </section>
-                    <fieldset class="fsData" id="Fs_FamBackGround">
-                        <legend class="dataLegend"><b>Family Background</b></legend>
-                        <section class="InfoSection FamBG">
-                            <div class="father">
-                                <label for="">Enter your <b><em>Father's</em></b>:</label><br>
-                                    <section class="Father">
-                                        <label for="FlName" class="lbl ">Last Name </label>
-                                        <input type="text" name="FLName" id="FlName" required class="box LN"><br>
-                                        <label for="fFName" class="lbl">First Name </label><input type="text" clas box" name="FFName" id="FfName" required class="box"><br>
-                                        <label for="Fmi" class="lbl">Middle  Name</label><input type="text" clas box" name="FMi" id="Fmi" class="box" required><br>
-                                        <label for="occupation" class="lbl">Occupation</label><input type="text" clas box" name="occupation" id="occupation"required class="box NL"><br>
+        <div class="container">
+                <main class="ncx">
+                <article id="Jaf">
+                    <h3>JOWA APPLICATION FORM 2022</h3>
+                    <form method="GET" action="">
+                        <section class="basicInfoSection">
+                         <fieldset class="fsData" id="Fs_basic_Info">
+                                <legend class="dataLegend"><b>Basic Information</b></legend>
+                                    <section class="InfoSection basic_info">
+                                        <div class="first-column">
+                                            <label class="lblBasicInfo " for="lName" >Last Name</label>
+                                            <input type="text" name="LName" id="lName" class="box LN" required><br>
+                                            <label class="lblBasicInfo" for="fName">First Name</label><input type="text" name="FName" id="fName" required class="box" ><br>
+                                            <label class="lblBasicInfo" for="mi">Middle Initial</label><input type="text" name="Mi" id="mi" required class="box" ><br>
+                                            <label class="lblBasicInfo" for="beerday">Date of Birth</label><input type="date" name="bday" id="beerday" required class="box" ><br>
+                                            <label class="lblBasicInfo" for="ctznshp">Citizenship</label><input type="text" name="ctznshp" id="ctznshp" class="box" ><br>
+                                        </div>
+                                        <div class="second-column">
+                                            <label class="lblBasicInfo" for="address">Address</label><input type="text" name="address" id="address" required class="box" ><br>
+                                            <label class="lblBasicInfo" for="age">Age</label><input type="number" name="Age" id="age" required class="box" ><br>
+                                            <label class="lblBasicInfo" for="btype">  Blood Type</label><input type="text" name="btype" id="bType" required class="box" ><br>
+                                            <label class="lblBasicInfo" for="height">Height</label><input type="text" name="height" id="height"required class="box" ><br>
+                                            <label class="lblBasicInfo" for="occupation">Occupation</label><input type="text" name="occupation" id="occupation"required class="box" ><br>
+                                        </div>
                                     </section>
-                            </div>
-                                <div class="mother">
-                                        <label for="">Enter your <b><em>Mother's</em> </b>:</label><br>
-                                        <section class="mother">
-                                        <label for="MName" class="lbl">Maiden Name </label>
-                                        <input type="text" class="box" name="MMName" id="MMName" required><br>
-                                        <label for="MfName" class="lbl">First Name </label>
-                                        <input type="text" class="box" name="MFName" id="MfName" required class="box"><br>
-                                        <label for="Fmi" class="lbl">Middle Name</label>
-                                        <input type="text" class="box" name="MMi" id="Mmi" required class="box"><br>
-                                        <label for="occupation" class="lbl">Occupation</label>
-                                        <input type="text"   name="occupation" id="occupation"required class="box NL"><br>
-                                                                                                            </section>
-                            </div>
-                        </section>    
-                    </fieldset>
-                    <span>
-                        <input type="submit" id="btnSubmit" value="Submit">
-                    </span>
-                </form>
-            </article>
-        </main>
+                            </fieldset>
+                        </section>
+                        <section>
+                            <fieldset class="fsData" id="Fs_prsnl_quest">
+                                <legend class="dataLegend"><b>Personal Questions</b></legend>
+                                    <section class="InfoSection prsnl_quest">
+                                        <div class="first-column">
+                                            <label for="single"> Are you single? <br>
+                                                <input type="radio" name="single?" id="yes"><label for="yes">Yes</label><br>
+                                                <input type="radio" name="single?" id="no"> <label for="no">No</label><br>
+                                                <input type="radio" name="single?" id="maybe"> <label for="maybe">Maybe</label>
+                                            </label><br><br>
+                                            <label for="">Are you still virgin?</label><br>
+                                                <input type="radio" name="virgin?" id="yes"><label for="">Yes</label><br>
+                                                <input type="radio" name="virgin?" id="no"> <label for="">No</label><br>
+                                                <input type="radio" name="virgin?" id="maybe"> <label for="">Maybe</label><br><br>
+                                            <label for="">Do you have kids?</label><br>
+                                                <input type="radio" name="kids?" id="yes"><label for="">Yes</label><br>
+                                                <input type="radio" name="kids?" id="no"> <label for="">No</label><br>
+                                                <input type="radio" name="kids?" id="maybe"> <label for="">Maybe</label><br><br>
+                                                <label for="">
+                                                    How long will you stay?
+                                                <section id="dropdown">
+                                                    <select name="will stay?" id="stay" >
+                                                        <option value="">Maybe:</option>
+                                                        <option value="months">Months</option>
+                                                        <option value="days">Days</option>
+                                                        <option value="years">Years</option>
+                                                        <option value="lifetime">Lifetime</option>
+                                                        <option value="never">Never</option>
+                                                        <option value="waporeber">Waray Poreber!</option>
+                                                    </select>
+                                                </section>
+                                                    </label>
+                                            <br>
+                                                    <label for="">Do you smoke and Drink alcoholic beverages?</label><br>
+                                                    <input type="radio" name="drink&smoke?" id="yes">
+                                                    <label for="">Yes, I drink occationally but
+                                                        I don't smoke</label><br>
+                                                    <input type="radio" name="drink&smoke?" id="Yes"><label for="">Both Yes<br>
+                                                    <input type="radio" name="drink&smoke?" id="no"> <label for="">Both No</label>
+                                        </div>
+                                        <div class="second-column">
+                                            <label class="lblBasicInfo" for="">How old are you when you had your first relationship?</label><input type="text" name="" id=""required class="box" ><br><br>
+                                            <label for="">Relationship Background: <em>give at least 3 </em> </label><br>
+                                            <label for="">Ex #1 Full Name:</label><input type="text" name="x1_name" class="box" id=""><br>
+                                            <label for="">Ex #2 Full Name:</label><input type="text" name="x2_name" class="box" id=""><br> <br>
+                                            <label for="">What is your SOGIE?</label><input type="text" name="x3_name" class="box" id="">
+                                            <br> <br>
+                                            <label for="">Why should I chose you?</label><br>
+                                            <textarea name="why?" id="txtWaeyo" cols="18" rows="5" placeholder="Enter your rationale"></textarea><br><br>
+                                            <label for="">Upload your Medical Certificate and Police Clearance</label> <br><input type="file" name="certificate" id="" class="file">
+                                        </div>
+                                    </section>
+                            </fieldset>
+                        </section>
+                        <fieldset class="fsData" id="Fs_FamBackGround">
+                            <legend class="dataLegend"><b>Family Background</b></legend>
+                            <section class="InfoSection FamBG">
+                                <div class="father">
+                                    <label for="">Enter your <b><em>Father's</em></b>:</label><br>
+                                        <section class="Father">
+                                            <label for="FlName" class="lbl ">Last Name </label>
+                                            <input type="text" name="FLName" id="FlName" required class="box LN"><br>
+                                            <label for="fFName" class="lbl">First Name </label><input type="text" clas box" name="FFName" id="FfName" required class="box"><br>
+                                            <label for="Fmi" class="lbl">Middle  Name</label><input type="text" clas box" name="FMi" id="Fmi" class="box" required><br>
+                                            <label for="occupation" class="lbl">Occupation</label><input type="text" clas box" name="occupation" id="occupation"required class="box NL"><br>
+                                        </section>
+                                </div>
+                                    <div class="mother">
+                                            <label for="">Enter your <b><em>Mother's</em> </b>:</label><br>
+                                            <section class="mother">
+                                            <label for="MName" class="lbl">Maiden Name </label>
+                                            <input type="text" class="box" name="MMName" id="MMName" required><br>
+                                            <label for="MfName" class="lbl">First Name </label>
+                                            <input type="text" class="box" name="MFName" id="MfName" required class="box"><br>
+                                            <label for="Fmi" class="lbl">Middle Name</label>
+                                            <input type="text" class="box" name="MMi" id="Mmi" required class="box"><br>
+                                            <label for="occupation" class="lbl">Occupation</label>
+                                            <input type="text"   name="occupation" id="occupation"required class="box NL"><br>
+                                                                                                                                        </section>
+                                </div>
+                            </section>
+                        </fieldset>
+                        <span>
+                            <input type="submit" id="btnSubmit" value="Submit">
+                        </span>
+                    </form>
+                </article>
+                        </main>
+            </div>
 </body>
 </html>
