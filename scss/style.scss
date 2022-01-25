@@ -18,9 +18,6 @@
   }
 }
 
-@mixin size {
-  width: clamp(480px, 70%, 10vw);
-}
 @mixin h3size {
   font: {
     size: clamp(1rem, 10%, 5vw);
@@ -29,7 +26,6 @@
 }
 
 body {
-   
   @include center();
   @include labelfont();
   background: rgb(243, 243, 243);
@@ -37,8 +33,7 @@ body {
     color: rgb(33, 189, 124);
   }
   .ncx {
-       
-   max-width: 480px;
+    width: 100%;
     padding: 1.8rem;
     margin: 1rem;
     background-color: rgb(255, 251, 251);
@@ -70,7 +65,7 @@ body {
       .prsnl_quest {
         display: flex;
         justify-content: space-evenly;
-        padding: 0.8rem .4rem;
+        padding: 0.8rem 0.4rem;
         font-family: "Poppins";
         font-size: 13px;
         .first-column {
@@ -100,7 +95,7 @@ body {
         }
         .mother {
           width: 200px;
-        //   margin-right: -2rem;
+          //   margin-right: -2rem;
         }
         .box {
           width: 9.6rem;
@@ -142,7 +137,6 @@ body {
   }
   body {
     @include font();
- @include sayz();
     .dataLegend {
       color: rgb(8, 87, 206);
     }
